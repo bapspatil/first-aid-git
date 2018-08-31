@@ -2,7 +2,7 @@
 # first-aid-git
 
 A quick guide and list of commands related to Git & GitHub.
-<br>If you're new to Git and GitHub or want to deepen your knowlegde about it, this repository is for you.
+<br>If you're new to Git and GitHub or want to deepen your knowledge about it, this repository is for you.
 
 **Feel free to email any doubts you may have at <a href="mailto://hi@bapspatil.com">hi@bapspatil.com</a>.**
 
