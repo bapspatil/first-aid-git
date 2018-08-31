@@ -1,1 +1,8 @@
+title: first-aid-git
+name: Bapusaheb Patil
+email: hi@bapspatil.com
+description: A quick guide and list of commands related to Git & GitHub.
+
 theme: jekyll-theme-cayman
+
+display_footer: none
