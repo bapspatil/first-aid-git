@@ -168,6 +168,10 @@ A quick guide and list of commands related to Git & GitHub.
 
         git checkout <hash> path/to/file
 
+30. Reapply commits on top of another base tip
+
+    `git rebase <branch-name>`
+
 ## Author
 
 Bapusaheb Patil
