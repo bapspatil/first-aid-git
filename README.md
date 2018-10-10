@@ -50,99 +50,107 @@ A quick guide and list of commands related to Git & GitHub.
 
     `git remote add origin <repository-url>.git`
 
-7. Push - Update changes to repository on GitHub
+7. Changing a remote URL for your repository  
 
-    7.1 To push to `master` branch
+    `git remote set-url origin <repository-url>.git`
+
+8. Push - Update changes to repository on GitHub
+
+    8.1 To push to `master` branch
   
         git push -u origin master
 
-    7.2 To force-push (**Warning**: This erases all previous commits)
+    8.2 To force-push (**Warning**: This erases all previous commits)
 
         git push -u origin master -f
 
-    7.3 To push to a different branch
+    8.3 To push to a different branch
   
         git push -u origin <branch-name>
 
-8. Clone a repository
+9. Clone a repository
 
    `git clone <repository-url>`
 
-9. Create a new branch from current working branch and switch to it
+10. Create a new branch from current working branch and switch to it
 
-   `git checkout -b <new-branch-name>`
+    `git checkout -b <new-branch-name>`
 
-10. Create new branch from an existing branch and stay in the current branch
+11. Create new branch from an existing branch and stay in the current branch
 
-    `git checkout -b <new-branch> <existing-branch>`
+    `git checkout -b <new-branch> <existing-branch>`  
 
-11. Switch to a new branch
+12. Switch to a new branch
 
     `git branch <branch-name>`
 
-12. List all available branches
+13. List all available branches
 
-    `git branch`
+    `git branch`  
 
-13. Merge a branch from the current branch
+14. Delete a branch
+
+    `git branch -d <branch-name>`
+
+15. Merge a branch from the current branch
 
     `git merge <branch-to-be-merged>`
 
-14. Check status of files
+16. Check status of files
 
     `git status`
 
-15. Remove files for commit
+17. Remove files for commit
 
     `git rm <file-name>`
 
-16. Pull - Update local repo with latest update from server
+18. Pull - Update local repo with latest update from server
 
-    16.1 To pull from a single remote
+    18.1 To pull from a single remote
 
         git pull
 
-    16.2 To pull from all remotes
+    18.2 To pull from all remotes
 
         git pull --all
 
-17. Stash - Save changes made in the current index and working directory for later
+19. Stash - Save changes made in the current index and working directory for later
 
     `git stash`
 
-18. Stash Apply - Apply stashed changes
+20. Stash Apply - Apply stashed changes
 
     `git stash apply`
 
-19. See most recent stash without applying it
+21. See most recent stash without applying it
 
     `git stash show -p`
 
-20. View the content of an arbitrary stash
+22. View the content of an arbitrary stash
 
     `git stash show -p stash@{1}`
 
-21. Get Stash List
+23. Get Stash List
 
     `git stash list`
 
-22. Modify the Previous Commit's Message
+24. Modify the Previous Commit's Message
 
     `git commit --amend -m "New commit message"`
 
-23. View commits of a certain author
+25. View commits of a certain author
 
     `git log --author=<username>`
 
-24. View all commits
+26. View all commits
 
     `git log`
 
-25. View list of tags
+27. View list of tags
 
     `git tag`
 
-26. Config value for color
+28. Config value for color
   
     ```
     color.status=auto
@@ -150,25 +158,25 @@ A quick guide and list of commands related to Git & GitHub.
     color.diff=auto
     ```
 
-27. Export Git repository as a ZIP file
+29. Export Git repository as a ZIP file
 
     `git archive --format=zip -9 HEAD -o <file-name>`
 
-28. Search (say, "foobar")
+30. Search (say, "foobar")
 
     `git grep "foobar"`
 
-29. Revert to previous version of a particular file
+31. Revert to previous version of a particular file
 
-    29.1 Get the commit history of the file
+    31.1 Get the commit history of the file
 
         git log path/to/file
 
-    29.2 Checkout to particular version using the commit hash obtained from the above command
+    31.2 Checkout to particular version using the commit hash obtained from the above command
 
         git checkout <hash> path/to/file
 
-30. Reapply commits on top of another base tip
+32. Reapply commits on top of another base tip
 
     `git rebase <branch-name>`
 
